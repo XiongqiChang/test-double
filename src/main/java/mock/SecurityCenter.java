@@ -1,6 +1,9 @@
 package mock;
 
 public class SecurityCenter {
+
+    MockDoorPanel mockDoorPanel = new MockDoorPanel();
+
     private final DoorPanel doorPanel;
 
     public SecurityCenter(DoorPanel doorPanel) {
@@ -8,6 +11,8 @@ public class SecurityCenter {
     }
 
     public void switchOn() {
-        doorPanel.close();
+        mockDoorPanel.close();
     }
+
+
 }
